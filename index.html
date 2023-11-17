@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <title>Halloween Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question1" class="question">
+            <h2>Question 1: What is a traditional Halloween costume often associated with witches?</h2>
+            <label>
+                <input type="radio" name="q1" value="incorrect"> Pirate
+            </label>
+            <label>
+                <input type="radio" name="q1" value="incorrect"> Superhero
+            </label>
+            <label>
+                <input type="radio" name="q1" value="correct"> Pointed Hat and Broomstick
+            </label>
+        </div>
+
+        <div id="question2" class="question">
+            <h2>Question 2: What orange vegetable is commonly carved into spooky faces during Halloween?</h2>
+            <label>
+                <input type="radio" name="q2" value="correct"> Pumpkin
+            </label>
+            <label>
+                <input type="radio" name="q2" value="incorrect"> Carrot
+            </label>
+            <label>
+                <input type="radio" name="q2" value="incorrect"> Sweet Potato
+            </label>
+        </div>
+
+        <div id="question3" class="question">
+            <h2>Question 3: What activity do children typically engage in on Halloween where they go door-to-door for treats?</h2>
+            <label>
+                <input type="radio" name="q3" value="correct"> Trick-or-Treating
+            </label>
+            <label>
+                <input type="radio" name="q3" value="incorrect"> Caroling
+            </label>
+            <label>
+                <input type="radio" name="q3" value="incorrect"> Egg Hunting
+            </label>
+        </div>
+
+        <button onclick="checkAnswers()">Submit</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h2>Congratulations!</h2>
+        <p>You've answered all questions correctly. Here's the hidden post:</p>
+        <div id="hidden-post">
+            <p>This is the hidden post content.</p>
+            <!-- Add the image from Google Drive -->
+            <img src="https://drive.google.com/uc?id=1iTc4bRGvYANBnbhQOindKb4m0mFBdeUj" alt="Halloween Image"
+        </div>
+    </div>
+
+    <script src="3.js"></script>
+</body>
+</html>
